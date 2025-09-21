@@ -1,6 +1,6 @@
 # 🎹 Piano LED Project
 
-Dieses Projekt visualisiert MIDI-Signale von einem digitalen Klavier über Java auf dem Computer und steuert adressierbare LEDs über ein Arduino.  
+Dieses Projekt visualisiert MIDI-Daten von einem digitalen Klavier mit modernem USB-B-Anschluss über Java auf dem Computer und steuert adressierbare LEDs über ein Arduino.  
 
 ---
 
