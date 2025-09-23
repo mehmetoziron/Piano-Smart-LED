@@ -65,7 +65,7 @@ E-Piano: MIDI-MSG (USB) → Computer: Noten- & Velocity-Werte (USB) → Arduino
 
 ![Schaltplan](images/Piano_Led_circuit.png)  
 ![Datenfluss](images/connection_data_flow.png)  
-![Piano LEDs Gif](images/LEDs Video.gif.gif)  
+![Piano LEDs Gif](images/LEDs%20Video.gif)  
 ![Arduino Setup](images/arduino_setup.jpg)  
 
 ---
