@@ -102,7 +102,6 @@ E-Piano: MIDI-MSG (USB) → Computer: Noten- & Velocity-Werte (USB) → Arduino
 5. Nach dem Upload startet das Arduino automatisch.
 
 #### Option 2: AVRDude (Kommandozeile)
-```bash
 avrdude -p atmega328p -c arduino -P COM3 -b 115200 -U flash:w:MIDI_Led_Piano.ino.with_bootloader.hex:i 
 
 
