@@ -53,7 +53,13 @@ E-Piano: MIDI-MSG (USB) → Computer: Noten- & Velocity-Werte (USB) → Arduino
 
 1. `ArduinoController.jar`, `lib`-Ordner und `run.bat` herunterladen  
 2. Arduino an die LED-Streifen anschließen und Software hochladen  
-   > ⚠️ **Arduino-Code ist nicht enthalten; bitte per E-Mail anfragen.**  
+   > Piano-Smart-LED/
+      ├── app/
+      │ ├── ArduinoController.jar
+      │ ├── lib/
+      │ ├── run.bat
+      │ └── MIDI_Led_Piano.ino.with_bootloader.hex ← [HEX-Datei für Arduino](https://github.com/mehmetoziron/Piano-Smart-LED/app/MIDI_Led_Piano.ino.with_bootloader.hex)
+      └── README.md 
 3. E-Piano mit Computer verbinden  
 4. `run.bat` ausführen → COM-Ports werden angezeigt → Arduino COM auswählen  
 5. MIDI-Geräte werden angezeigt → E-Piano auswählen  
@@ -82,8 +88,22 @@ E-Piano: MIDI-MSG (USB) → Computer: Noten- & Velocity-Werte (USB) → Arduino
 
 ## 📄 Lizenz / Hinweis
 
-Dieses Repository dient **nur der Projektpräsentation**.  
-**Quellcode ist nicht enthalten. Arduino-Code bitte per E-Mail anfragen.**  
+### ⚙️ Arduino-Hex-Datei hochladen
+
+> ⚠️ Hinweis:  
+> Der Arduino-Quellcode ist aus urheberrechtlichen Gründen **nicht** im Repository enthalten.  
+> Stattdessen steht eine **vorkompilierte HEX-Datei** (`MIDI_Led_Piano.ino.with_bootloader.hex`) zur Verfügung, die direkt auf das Arduino hochgeladen werden kann.
+
+#### Option 1: Arduino IDE
+1. Öffne die Arduino IDE.  
+2. Wähle dein Board (z. B. *Arduino Nano*) und den entsprechenden COM-Port.  
+3. Menü → **Sketch → Mit Programmer hochladen**.  
+4. Wähle die Datei `MIDI_Led_Piano.ino.with_bootloader.hex`.  
+5. Nach dem Upload startet das Arduino automatisch.
+
+#### Option 2: AVRDude (Kommandozeile)
+```bash
+avrdude -p atmega328p -c arduino -P COM3 -b 115200 -U flash:w:MIDI_Led_Piano.ino.with_bootloader.hex:i 
 
 
 --- ## ✨ Entwickler 
