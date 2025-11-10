@@ -58,7 +58,7 @@ E-Piano: MIDI-MSG (USB) → Computer: Noten- & Velocity-Werte (USB) → Arduino
          > ArduinoController.jar
          > lib/
          > run.bat
-         > MIDI_Led_Piano.ino.with_bootloader.hex ← [HEX-Datei für Arduino](https://github.com/mehmetoziron/Piano-Smart-LED/app/MIDI_Led_Piano.ino.with_bootloader.hex)
+         > MIDI_Led_Piano.ino.with_bootloader.hex ← [HEX-Datei für Arduino](https://github.com/mehmetoziron/Piano-Smart-LED/blob/main/app/MIDI_Led_Piano.ino.with_bootloader.hex)
       > README.md 
 3. E-Piano mit Computer verbinden  
 4. `run.bat` ausführen → COM-Ports werden angezeigt → Arduino COM auswählen  
