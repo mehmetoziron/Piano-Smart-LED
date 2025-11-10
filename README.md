@@ -53,13 +53,7 @@ E-Piano: MIDI-MSG (USB) → Computer: Noten- & Velocity-Werte (USB) → Arduino
 
 1. `ArduinoController.jar`, `lib`-Ordner und `run.bat` herunterladen  
 2. Arduino an die LED-Streifen anschließen und Software hochladen  
-   > Piano-Smart-LED/
-      > app/
-         > ArduinoController.jar
-         > lib/
-         > run.bat
-         > MIDI_Led_Piano.ino.with_bootloader.hex ← [HEX-Datei für Arduino](https://github.com/mehmetoziron/Piano-Smart-LED/blob/main/app/MIDI_Led_Piano.ino.with_bootloader.hex)
-      > README.md 
+   > Piano-Smart-LED/app/MIDI_Led_Piano.ino.with_bootloader.hex ← [HEX-Datei für Arduino](https://github.com/mehmetoziron/Piano-Smart-LED/blob/main/app/MIDI_Led_Piano.ino.with_bootloader.hex)
 3. E-Piano mit Computer verbinden  
 4. `run.bat` ausführen → COM-Ports werden angezeigt → Arduino COM auswählen  
 5. MIDI-Geräte werden angezeigt → E-Piano auswählen  
