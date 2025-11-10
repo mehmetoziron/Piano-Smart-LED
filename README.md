@@ -105,7 +105,7 @@ E-Piano: MIDI-MSG (USB) → Computer: Noten- & Velocity-Werte (USB) → Arduino
 avrdude -p atmega328p -c arduino -P COM3 -b 115200 -U flash:w:MIDI_Led_Piano.ino.with_bootloader.hex:i 
 
 
---- ## ✨ Entwickler 
+## ✨ Entwickler 
 
 **Name:** Mehmet Özdemir 
 **GitHub:** [https://github.com/mehmetoziron](https://github.com/mehmetoziron)
